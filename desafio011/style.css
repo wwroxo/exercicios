@@ -6,9 +6,8 @@
 div.container {
     position: relative;
     height: 100vh;
-    background-color: black;
-    background-image: url('imagem/espaco_g.png');
-    background-repeat: no-repeat;
+   
+    background-image: url('imagem/espaco_g.png');    
     background-size: cover;
    
    
