@@ -15,8 +15,8 @@ div.container {
 
 div.conteudo {
   position: absolute;
-  height: 100%;
-  width: 50%;
+  height: 80vh;
+  width: 40vw;
   background-image: url('imagem/astronauta.png');
  background-repeat: no-repeat;
  background-size: 100% 100%;
