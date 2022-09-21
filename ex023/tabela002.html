@@ -13,6 +13,17 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+            
+        
+        }
+        caption {
+
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+
         }
 
         td, th {
@@ -24,12 +35,24 @@
             background-color: grey;
             color: white;
         }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: lightgrey;
+        }
     </style>
 </head>
 <body>
     <h1>Uso de tabelas grandes.</h1>
 
     <!--    Anatomia de tabelas grande.
+        odd = impar
+        even = par
         Table{
             THead{
                 tr, td, th
@@ -46,10 +69,11 @@
     -->
 
     <table>
+        <caption>População das unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
             </tr>
 
         </thead>
@@ -66,16 +90,50 @@
                 <td>Rio de Janeiro</td>
                 <td>17.904.2016</td>
             </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td>17.504.412</td>
+                </tr>
+                <tr>
+                    <td>Espirito Santo</td>
+                    <td>16.520.236</td>
+                </tr>
+                <tr>
+                    <td>Santa Catarina</td>
+                    <td>16.402.850</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do Norte</td>
+                    <td>15.892.568</td>
+                </tr>
+                <tr>
+                    <td>Maranhão</td>
+                    <td>15.678.583</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do Sul</td>
+                    <td>15.548.958</td>
+                </tr>
+                <tr>
+                    <td>Amazonas</td>
+                    <td>14.958.752</td>
+                </tr>
+                <tr>
+                    <td>Alagoas</td>
+                    <td>14.569.842</td>
+
+                </tr>
+                
 
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td>00000</td>
             </tr>
 
         </tfoot>
     </table>
-    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, suscipit deleniti eum aliquid recusandae dicta magni voluptates quam sapiente voluptate, provident obcaecati excepturi sed accusantium aspernatur, voluptatibus dolor incidunt expedita. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere eveniet consectetur nobis obcaecati minima molestias sequi tempora, officiis quas, illo voluptate perferendis dignissimos. Alias placeat aperiam quas non in error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa saepe odio asperiores! Sint atque iusto, necessitatibus exercitationem quisquam iste dolorum veniam sapiente temporibus, enim quae consequuntur ut sunt nihil fuga? Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem cupiditate debitis, ratione nobis ex animi vel esse ab quo. Odit reiciendis atque suscipit doloribus. Molestias ducimus non hic esse dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique eos error laudantium sapiente et sequi ducimus accusantium omnis tempora alias, cupiditate excepturi ex itaque exercitationem ab sit nulla, officiis nesciunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat laborum saepe iusto. Vitae reprehenderit doloribus earum molestias beatae suscipit ut corrupti nihil explicabo rem labore, eaque totam adipisci odio qui! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque omnis totam voluptatum deleniti itaque illo, explicabo deserunt impedit doloremque accusamus recusandae vel molestias accusantium, repudiandae fugiat sequi sint, harum ipsa!</p>
 </body>
 </html>
